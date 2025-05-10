@@ -309,7 +309,7 @@ public class RobotContainer {
 
         driveController.start().onTrue(drive.zeroPose());
 
-        driveController.povUp().onTrue(climber.climb());
+        driveController.povUp().onTrue(climber.stow());
         driveController.povDown().onTrue(climber.down());
 
         driveController
